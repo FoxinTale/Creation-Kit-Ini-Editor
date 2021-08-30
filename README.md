@@ -3,7 +3,7 @@ A simple tool written in Java to allow easy appending of BSA files to the Creati
 It also allows creation of the "CreationKitCustom.ini" for setting multiple master loads.
 
 ### Features
-(Note: This is the planned feature list,. nothing is currently included.)
+(Note: This is the planned feature list, nothing is currently included.)
 - Easy GUI based INI file editing for BSA files.
 - Generation of the "CreationKitCustom.ini".
 - Launching of the creation kit itself from within the application.
