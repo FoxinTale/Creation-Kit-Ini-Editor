@@ -1,1 +1,2 @@
 windowTitle="Creation Kit Ini Editor"
+mainButtonText="Add BSAs"

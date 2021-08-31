@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FileOps {
-    public static void ReadLang(File langFile){
+    public static void readLang(File langFile){
         String currentLine;
         ArrayList<String> strings = new ArrayList<>();
 
@@ -19,5 +19,22 @@ public class FileOps {
             fnfe.printStackTrace();
         }
         Strings.parseLangArray(strings);
+    }
+
+    public static ArrayList<String> readCreationKitConfig(File ckIni){
+        String currentLine;
+        ArrayList<String> ckConfigContents = new ArrayList<>();
+
+        try{
+            Scanner configReader = new Scanner(ckIni);
+            while(configReader.hasNext()){
+                currentLine = configReader.nextLine();
+                ckConfigContents.add(currentLine);
+            }
+
+        } catch (FileNotFoundException fnfe){
+            fnfe.printStackTrace();
+        }
+        return ckConfigContents;
     }
 }

@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Strings {
 
     public static String windowTitle;
+    public static String mainButtonText;
 
     public static void parseLangArray(ArrayList<String> list){
         ArrayList<String> langStrings = new ArrayList<>();
@@ -18,11 +19,12 @@ public class Strings {
 
     public static void setStrings(ArrayList<String> langStrings){
         windowTitle = langStrings.get(0);
-        launchGUI(); // Now that all our strings are initialised, we can launch the GUI.
+        mainButtonText = langStrings.get(1);
+        //launchGUI(); // Now that all our strings are initialised, we can launch the GUI.
     }
 
     // No, I don't know why I have to do it this way. Java complains if I have the call outside here.
-    public static void launchGUI(){
-        GUI.MakeGUI();
-    }
+    //public static void launchGUI(){
+      //  GUI.MakeGUI();
+  //  }
 }

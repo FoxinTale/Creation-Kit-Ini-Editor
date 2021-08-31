@@ -9,6 +9,8 @@ import java.util.stream.Stream;
 
 public class Game {
 
+    public static ArrayList<String> selectedBSAs = new ArrayList<>();
+
     public static void findFoldersAndFiles() {
         File skyrim = new File("F:\\Steam\\steamapps\\common\\Skyrim Special Edition"); //Make sure to change this, as not everyone has the same install location.
         File creationKit;
@@ -18,11 +20,13 @@ public class Game {
         List<Path> gameDataContents = null;
         ArrayList<String> dataBSAs = new ArrayList<>();
 
-
         if (skyrim.exists()) {
             creationKit = new File(skyrim.getAbsolutePath() + File.separator +  "CreationKit.exe"); // Sanity check here.
             if (creationKit.exists()) {
-                creationKitConfig = new File(skyrim.getAbsolutePath() + File.separator + "CreationKitPrefs.ini");
+                creationKitConfig = new File(skyrim.getAbsolutePath() + File.separator + "CreationKit.ini");
+                if(creationKitConfig.exists()){
+                   // FileOps.readCreationKitConfig(creationKitConfig);
+                }
             } else {
                 System.out.println("Creation Kit was not found.");
             }
@@ -38,9 +42,12 @@ public class Game {
             }
 
             // Remove the base game files from the list.
-            dataBSAs = removeBaseGameFilesFromList(dataBSAs);
+            removeBaseGameFilesFromList(dataBSAs);
+            //appendNewLines(dataBSAs);
 
-            Debug.printArrayList(dataBSAs);
+
+            // Debug.printArrayList(dataBSAs);
+            GUI.MainGUI(dataBSAs);
         } else {
             System.out.println("Could not find Skyrim Special Edition!");
         }
@@ -61,6 +68,16 @@ public class Game {
         return result;
     }
 
+    public static ArrayList<String> appendNewLines(ArrayList<String> list){
+        StringBuilder tempSB = new StringBuilder();
+        for(int i = 0; i < list.size(); i++){
+            tempSB.append(list.get(i)).append("\n");
+
+            list.set(i, tempSB.toString());
+            tempSB.delete(0, tempSB.length());
+        }
+        return list;
+    }
 
     // Removes the base game's files from the list. they're already loaded.
     public static ArrayList<String> removeBaseGameFilesFromList(ArrayList<String> dataBSAs){
@@ -89,12 +106,11 @@ public class Game {
                 default:
                     //Do nothing. More information about the Voices file may be needed. I don't know what other languages exist out there.
             }
-            //  baseGameBSAs.add(42);
         }
 
         List<String> tempList = dataBSAs.subList(baseGameBSAs.get(0), baseGameBSAs.get(baseGameBSAs.size() - 1));
         dataBSAs.removeAll(tempList);
-        dataBSAs.remove("Skyrim - Voices_en0.bsa");
+        dataBSAs.remove("Skyrim - Voices_en0.bsa"); //Since it doesn't like to remove it in the previous step, remove it here.
 
         return dataBSAs;
     }
