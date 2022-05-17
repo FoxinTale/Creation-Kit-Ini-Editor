@@ -1,0 +1,156 @@
+Apocalypse - Magic of Skyrim - Textures.bsa
+Apocalypse - Magic of Skyrim.bsa
+arnima - Textures.bsa
+arnima.bsa
+Barefoot Footstep Extended.bsa
+Battle Wounds - Textures.bsa
+Bijin NPCs - Textures.bsa
+Bijin NPCs.bsa
+Bijin Warmaidens - Textures.bsa
+Bijin Warmaidens.bsa
+Bijin Wives - Textures.bsa
+Bijin Wives.bsa
+BlackthornManor - Textures.bsa
+BlackthornManor.bsa
+Book Covers Skyrim - Lost Library - Textures.bsa
+Book Covers Skyrim - Lost Library.bsa
+Book Covers Skyrim - Textures.bsa
+Book Covers Skyrim.bsa
+Botox For Men - Base DLC.bsa
+Botox For Men - Base Game - Textures.bsa
+Botox For Men - Base Game.bsa
+Botox For Men - Falskaar.bsa
+Botox SE - Cutting Room Floor.bsa
+Botox SE - Falskaar.bsa
+Botox SE - Helgen Reborn.bsa
+Botox SE - Immersive Encounters.bsa
+Botox SE - Interesting NPCs.bsa
+Botox SE.bsa
+Brows - Textures.bsa
+BSAssets - Textures.bsa
+BSAssets.bsa
+BSHeartland - Textures.bsa
+BSHeartland TKAA Patch.bsa
+BSHeartland.bsa
+Carbon Fiber Bow - Textures.bsa
+Carbon Fiber Bow.bsa
+Cathedral Weathers - Textures.bsa
+Cathedral Weathers.bsa
+chocoyum - Textures.bsa
+chocoyum.bsa
+CiceroFemaleSE - Textures.bsa
+CiceroFemaleSE.bsa
+CliffsideCottage - Textures.bsa
+CliffsideCottage.bsa
+CollectUniqueCorpses.bsa
+CommunityOverlays1_0T30 - Textures.bsa
+CommunityOverlays1_0T30.bsa
+Crimes against Nature - Textures.bsa
+Crimes against Nature.bsa
+Cutting Room Floor - Textures.bsa
+Cutting Room Floor TKAA Patch.bsa
+Cutting Room Floor.bsa
+Dragonslayerarrows - temper - Textures.bsa
+Dragonslayerarrows - temper.bsa
+Dwemer Storage Cube Enhanced.bsa
+EMCompViljaSkyrim.bsa
+Falskaar - Textures.bsa
+Falskaar TKAA Patch.bsa
+Falskaar.bsa
+Fancy Dress Set - Textures.bsa
+Fancy Dress Set.bsa
+FMS_FemaleMakeupSuite.bsa
+Folkstead.bsa
+Footprints.bsa
+forgottencity - textures.bsa
+ForgottenCity TKAA Patch.bsa
+forgottencity.bsa
+Fossilsyum.bsa
+FSA_FindingSusannaAlive.bsa
+GomaPeroLand - Textures.bsa
+GomaPeroLand.bsa
+HD Lods SSE - Textures.bsa
+HD Lods SSE.bsa
+Helgen Reborn.bsa
+High Poly Head.bsa
+IceStormNG Shoes CBBE SE - Textures.bsa
+IceStormNG Shoes CBBE SE.bsa
+Immersive Encounters - Textures.bsa
+Immersive Encounters TKAA Patch.bsa
+Immersive Encounters.bsa
+Immersive Jewelry - Textures.bsa
+Immersive Jewelry.bsa
+Immersive Patrols II.bsa
+Immersive Sounds - Compendium.bsa
+Improved Eyes Skyrim.bsa
+Inigo.bsa
+Jehanna.bsa
+KaliliesNPCs - Textures.bsa
+KaliliesNPCs.bsa
+KynesBreathWeaponPack - Textures.bsa
+KynesBreathWeaponPack.bsa
+LADX_SSE - Textures.bsa
+LADX_SSE.bsa
+MikanEyes All in one SE - Textures.bsa
+Miyus Clothes Mix - Textures.bsa
+MoonAndStar_MAS - Textures.bsa
+MoonAndStar_MAS TKAA Patch.bsa
+MoonAndStar_MAS.bsa
+Morrowloot - Textures.bsa
+Morrowloot.bsa
+Nyhus.bsa
+PAN_NPCs - Textures.bsa
+PAN_NPCs.bsa
+PAN_NPCs_DB - Textures.bsa
+PAN_NPCs_DB.bsa
+PAN_NPCs_DG - Textures.bsa
+PAN_NPCs_DG.bsa
+PAN_NPCs_Males_No_Cicero - Textures.bsa
+PAN_NPCs_Males_No_Cicero.bsa
+Perfect Terrain LOD - Textures.bsa
+Perfect Terrain LOD.bsa
+PTCAether.bsa
+RaceMenu.bsa
+Rayeks_End_SSE_1.0 - Textures.bsa
+Rayeks_End_SSE_1.0.bsa
+RealisticWaterTwo - Textures.bsa
+Relationship Dialogue Overhaul.bsa
+RelicsofHyruleDragonborn - Textures.bsa
+RelicsofHyruleDragonborn.bsa
+Run For Your Lives - Textures.bsa
+Run For Your Lives.bsa
+S3DTrees NextGenerationForests - Textures.bsa
+S3DTrees NextGenerationForests.bsa
+Schlongs of Skyrim.bsa
+SFO_SkinFeatureOverlays.bsa
+Shino_Traveling Magician - Textures.bsa
+Shino_Traveling Magician.bsa
+ShowRaceMenuAlternative.bsa
+SkyHUD.bsa
+SkyrimsUniqueTreasures - Textures.bsa
+SkyrimsUniqueTreasures.bsa
+SkyTEST-RealisticAnimals&Predators.bsa
+SkyUI_SE.bsa
+SMIM-SE-Merged-All - Textures.bsa
+SMIM-SE-Merged-All.bsa
+sr_FillHerUp_Voices1.bsa
+SwearingMudCrabsCCM.bsa
+TheChoiceIsYours.bsa
+TheScarlett - Textures.bsa
+TheScarlett.bsa
+TKAA.bsa
+TW3Eyes.bsa
+UIExtensions.bsa
+Unofficial Skyrim Special Edition Patch - Textures.bsa
+Unofficial Skyrim Special Edition Patch.bsa
+UnreadBooksGlow.bsa
+Vivid WeathersSE - Textures.bsa
+Vivid WeathersSE.bsa
+yumcheese - Textures.bsa
+yumcheese.bsa
+[Ichirou] Osare Culort Outfit - Textures.bsa
+[Ichirou] Osare Culort Outfit.bsa
+[SunJeong] Ninirim Collection - Textures.bsa
+[SunJeong] Ninirim Collection.bsa
+[Zynx][Onigiri] Survival Gear - Textures.bsa
+[Zynx][Onigiri] Survival Gear.bsa

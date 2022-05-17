@@ -1,9 +1,9 @@
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -11,8 +11,7 @@ public class Game {
 
     public static ArrayList<String> selectedBSAs = new ArrayList<>();
 
-    public static void findFoldersAndFiles() {
-        File skyrim = new File("F:\\Steam\\steamapps\\common\\Skyrim Special Edition"); //Make sure to change this, as not everyone has the same install location.
+    public static void findFoldersAndFiles(File skyrim) {
         File creationKit;
         File creationKitConfig;
         File gameData;
@@ -25,7 +24,7 @@ public class Game {
             if (creationKit.exists()) {
                 creationKitConfig = new File(skyrim.getAbsolutePath() + File.separator + "CreationKit.ini");
                 if(creationKitConfig.exists()){
-                   // FileOps.readCreationKitConfig(creationKitConfig);
+                   FileOps.readCreationKitConfig(creationKitConfig);
                 }
             } else {
                 System.out.println("Creation Kit was not found.");
@@ -43,11 +42,13 @@ public class Game {
 
             // Remove the base game files from the list.
             removeBaseGameFilesFromList(dataBSAs);
-            //appendNewLines(dataBSAs);
+            appendNewLines(dataBSAs);
 
 
-            // Debug.printArrayList(dataBSAs);
-            GUI.MainGUI(dataBSAs);
+             Debug.printArrayList(dataBSAs);
+          // GUI.MainGUI(dataBSAs);
+           // GUI.checkListGUI(dataBSAs);
+            writeBSAFile(dataBSAs);
         } else {
             System.out.println("Could not find Skyrim Special Edition!");
         }
@@ -113,5 +114,39 @@ public class Game {
         dataBSAs.remove("Skyrim - Voices_en0.bsa"); //Since it doesn't like to remove it in the previous step, remove it here.
 
         return dataBSAs;
+    }
+
+    // Temporary, because it takes a bit to look for all the BSA files.. so I will put them in a text file instead.
+    public static void writeBSAFile(ArrayList<String> list){
+        //File bsas = new File("BSAs.txt");
+        try {
+            FileWriter listWriter = new FileWriter("BSAs.txt");
+            for(int i = 0; i < list.size(); i++){
+                listWriter.write(list.get(i));
+            }
+
+            listWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public static void readBSAFile(){
+        File bsaFile = new File("BSAs.txt");
+        ArrayList<String> dataBSAs = new ArrayList<>();
+        try {
+            BufferedReader bsaReader = new BufferedReader(new FileReader(bsaFile));
+
+            String line;
+            while ((line =bsaReader.readLine()) != null){
+                dataBSAs.add(line);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        GUI.checkListGUI(dataBSAs);
     }
 }
